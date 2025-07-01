@@ -1,0 +1,21 @@
+#creating pod inside namespace
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quiz-pod
+  namespace: quiz-app-namespace
+  labels:
+    app: quiz-app
+spec:
+  containers: 
+  - name: quiz-container
+    image: nginx:latest
+    ports:
+      containerPort: 80    
+
+
+# kubectl apply -f quiz_app.yml   
+# kubectl apply -f quiz_pod.yml
+# kubectl get namespaces
+# kubectl get pods -n quiz-app-namespace

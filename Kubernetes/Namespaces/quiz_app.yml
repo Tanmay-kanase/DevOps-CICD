@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: quiz-app-namespace
+
+# kubectl apply -f quiz_app.yml
+# kubectl get namespaces   
